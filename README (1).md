@@ -1,7 +1,7 @@
 # Housing Prices Advanced Regression Model
 
 ## 📌 Project Overview
-This project aims to predict housing prices using advanced regression techniques. The dataset used is the **Ames Housing dataset**, which contains various features such as lot size, number of rooms, location, and house conditions.
+This project aims to predict housing prices using advanced regression techniques. The dataset used is the **Ames Housing dataset**, which contains 80 various features such as lot size, number of rooms, location, and house conditions.
 
 ## 🔍 Problem Statement
 The goal of this project is to develop a **Machine Learning model** that accurately predicts house prices based on various features. This is a **regression problem** where we minimize the error between predicted and actual prices.
@@ -18,15 +18,16 @@ The goal of this project is to develop a **Machine Learning model** that accurat
 
 2. **Data Preprocessing** ⚙️
    - Handling missing values
-   - Encoding categorical variables
-   - Feature engineering and scaling
+   - Encoding categorical variables (Target Encoding)
+   - Feature engineering and scaling (Log Transformation on Right-Skewed Response Data)
+   - Remove highly uncorrelated features  (< 0.3 correlation with SalePrice was removed )
 
-3. **Model Selection & Training** 🤖
-   - Implementing regression models (Linear Regression, XGBoost, etc.)
+4. **Model Selection & Training** 🤖
+   - Implementing regression models (XGBoost)
    - Hyperparameter tuning using **Optuna**
    - Cross-validation to ensure robustness
 
-4. **Evaluation & Results** 📈
+5. **Evaluation & Results** 📈
    - RMSE, MAE, R² scores on validation data
    - Model comparison and selection
 
@@ -39,10 +40,8 @@ The goal of this project is to develop a **Machine Learning model** that accurat
 - **Matplotlib & Seaborn** 📉
 
 ## 🔥 How to Run the Project
-### **1️⃣ Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
+### **1️⃣ Install Train and Test  Data
+Change the file path when importing data 
 
 ### **2️⃣ Run the Jupyter Notebook**
 ```bash
@@ -52,23 +51,12 @@ jupyter notebook housing-prices-advanced-regression.ipynb
 ### **3️⃣ Train the Model**
 Run all cells to train and evaluate the model.
 
-## 📂 Project Structure
-```
-├── data/                # Raw and processed data
-├── notebooks/           # Jupyter notebooks
-├── models/              # Trained models
-├── src/                 # Scripts for preprocessing and training
-├── requirements.txt     # Dependencies
-└── README.md            # Project documentation
-```
 
 ## 📌 Results & Conclusion
-- The best-performing model achieved an **RMSE of XYZ**.
-- Feature engineering and hyperparameter tuning significantly improved accuracy.
+- The best-performing model achieved an **RMSE of 0.13510*.
+- Feature engineering and hyperparameter tuning significantly improved accuracy. (hypertuning improved accuracy by 7percent)
 - Future improvements could include **feature selection, ensemble methods, and deeper hyperparameter optimization**.
 
 ## ✉️ Contact
-For any questions, feel free to reach out at [Your Email] or open an issue in this repository.
+For any questions, feel free to reach out at @bigmanting on telegram  or email roysougata19705@gmail.com
 
----
-**⭐ If you found this useful, please consider giving it a star!**
