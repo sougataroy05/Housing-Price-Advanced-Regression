@@ -54,6 +54,7 @@ Run all cells to train and evaluate the model.
 
 ## 📌 Results & Conclusion
 - The best-performing model achieved an **RMSE of 0.13510*.
+![Model Performance](Kaggle_Submission_Score.png)
 - Feature engineering and hyperparameter tuning significantly improved accuracy. (hypertuning improved accuracy by 7percent)
 - Future improvements could include **feature selection, ensemble methods, and deeper hyperparameter optimization**.
 
